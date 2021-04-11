@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple landpage</title>
+    <link rel="stylesheet" type="text/css" href="/css/resize.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__body">
+                    <div class="header__leftside">
+                        <div class="logo">
+                            <a class="logo__link" href="#header">
+                                <img src="img/logo.svg" alt="company logo">
+                            </a>
+                        </div>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#header">Home</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#blog">Blog</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#features">Features</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#pricing">Pricing</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#documentation">Documentation</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__rightside">
+                        <div class="social">
+                            <div class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__link-img" src="img/icon-facebook.svg" alt="facebook icon">
+                                </a>
+                            </div>
+                            <div class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__link-img" src="img/icon-telegram.svg" alt="telegram icon">
+                                </a>
+                            </div>
+                            <div class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__link-img" src="img/icon-twitter.svg" alt="twitter icon">
+                                </a>
+                            </div>
+                            <div class="social__item">
+                                <a class="social__link" href="#">
+                                    <img class="social__link-img" src="img/icon-medium.svg" alt="medium icon">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="button" type="button" id="header-start-btn">Get started</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section class="section" id="home">
+                <div class="container">
+                    <div class="section__body">
+                        <h1 class="section__title"><span class="section__title--small">plan your life</span>Increase
+                            your <span class="section__title--bold">productivity</span></h1>
+                        <div class="slider">
+                            <input type="radio" name="point" id="card-1" checked>
+                            <input type="radio" name="point" id="card-2">
+                            <input type="radio" name="point" id="card-3">
+                            <div class="slider__card slider__card-1">
+                                <p class="slider__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum
+                                    pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus
+                                    congue vituperata.</p>
+                                <button class="slider__button" type="button">
+                                    <img class="slider__button-img" src="/img/icon-play-blue.svg" alt="play button">
+                                </button>
+                            </div>
+                            <div class="slider__card slider__card-2">
+                                <p class="slider__text">Contrary to popular belief, Lorem Ipsum is not simply random
+                                    text. It has roots in a piece of classical Latin literature from 45 BC, making it
+                                    over 2000 years old.</p>
+                            </div>
+                            <div class="slider__card slider__card-3">
+                                <p class="slider__text">It is a long established fact that a reader will be distracted
+                                    by the readable content of a page when looking at its layout. The point of using
+                                    Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                                    to using 'Content here, content here', making it look like readable English.</p>
+                            </div>
+                            <div class="slider__control-buttons">
+                                <label for="card-1"></label>
+                                <label for="card-2"></label>
+                                <label for="card-3"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="customers">
+                <div class="container">
+                    <h2>Our customers is</h2>
+                    <div class="section__body">
+                        <img class="section__logo" src="/img/logo-bitbucket.svg" alt="bitbucket logo">
+                        <img class="section__logo" src="/img/logo-apple-watch.svg" alt="apple-watch logo">
+                        <img class="section__logo" src="/img/logo-facebook.svg" alt="facebook logo">
+                        <img class="section__logo" src="/img/logo-atlassian.svg" alt="atlassian logo">
+                        <img class="section__logo" src="/img/logo-audi.svg" alt="audi logo">
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="plan-and-manage">
+                <div class="container">
+                    <div class="section__body">
+                        <div class="section__leftside">
+                            <h2 class="section__title"><span class="section__title--small">DESKTOP AND MOBILE
+                                    APP</span><span class="section__title--bold">Plan</span> and <span
+                                    class="section__title--bold">manage</span></h2>
+                            <p class="section__text">
+                                Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an,
+                                insolens gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no
+                                sea.
+                                Mea ex malis mollis oporteat. Eum an expetenda consequat.
+                            </p>
+                            <div class="section__block-line">
+                                <button class="button" type="button" id="video-btn">
+                                    View video
+                                    <img src="/img/icon-play-white.svg" alt="play button">
+                                </button>
+                                <button class="button" id="features-btn">See features
+                                </button>
+                            </div>
+                        </div>
+                        <div class="section__rightside">
+                            <img src="/img/illustration.png" alt="pictures of program versions">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="features">
+                <div class="container">
+                    <div class="section__body">
+                        <h2 class="section__title"><span class="section__title--small">about us</span>Read about our app
+                        </h2>
+                        <div class="section__block-line">
+                            <div class="section__block-column">
+                                <div class="section__icon">
+                                    <img class="section__icon-img" src="/img/icon-home.svg" alt="overview icon"
+                                        width="14" height="17">
+                                </div>
+                                <h5 class="section__caption">Overview</h5>
+                                <p class="section__text--small">
+                                    Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+                                </p>
+                            </div>
+                            <div class="section__block-column">
+                                <div class="section__icon">
+                                    <img class="section__icon-img" src="/img/icon-files.svg" alt="files icon" width="23"
+                                        height="14">
+                                </div>
+                                <h5 class="section__caption">Files</h5>
+                                <p class="section__text--small">
+                                    No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.
+                                </p>
+                            </div>
+                            <div class="section__block-column">
+                                <div class="section__icon">
+                                    <img class="section__icon-img" src="/img/icon-chat.svg" alt="chat icon" width="18"
+                                        height="15">
+                                </div>
+                                <h5 class="section__caption">Meeting chats</h5>
+                                <p class="section__text--small">
+                                    Vim ne tacimates neglegentur. Erat diceret omittam at est.
+                                </p>
+                            </div>
+                            <div class="section__block-column">
+                                <div class="section__icon">
+                                    <img class="section__icon-img" src="/img/icon-save.svg" alt="save icon" width="17"
+                                        height="15">
+                                </div>
+                                <h5 class="section__caption">Save events</h5>
+                                <p class="section__text--small">
+                                    Nisl idque mel ea, nominati voluptatum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section__block-line">
+                            <button class="button" type="button" id="readmore-btn">Read more</button>
+                            <p class="section__separator">or</p>
+                            <button class="button" type="button" id="section-start-btn">Get started</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="statistics">
+                <div class="section__body">
+                    <h2>Our statistics</h2>
+                    <div class="section__block-column section__block-column--blue">
+                        <img class="section__icon" src="/img/icon-increase.svg" alt="increase icon">
+                        <p class="section__title">89%</p>
+                        <p class="section__text">
+                            Customers who have increased their productivity
+                        </p>
+                    </div>
+                    <div class="section__block-column section__block-column--white">
+                        <img class="section__icon" src="/img/icon-peoples.svg" alt="customers icon">
+                        <p class="section__title">3123</p>
+                        <p class="section__text">
+                            Users who have used our application
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="blog">
+                <div class="container">
+                    <div class="section__body">
+                        <h2 class="section__title"><span class="section__title--small">our resources</span>Start reading
+                            our blog</h2>
+                        <div class="slider">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="quotes">
+                <div class="container">
+                    <div class="section__body">
+                        <div class="section__info">
+                            <h2 class="section__title"><span
+                                    class="section__title--small">testimonials</span>Customers's quotes</h2>
+                            <p class="section__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
+                                atqui laudem an.</p>
+                        </div>
+                        <div class="section__slider">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="section" id="faq">
+                <div class="container">
+                    <div class="section__body">
+                        <h2 class="section__title"><span class="section__title--small">customer help</span>Frequently
+                            asked questions</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="get-started">
+                <div class="container">
+                    <div class="section__body">
+                        <h2 class="section__title"><span class="section__title--small">plan your life</span>Get <span
+                                class="section__title--bold">started</span> now</h2>
+                        <p class="section__text">
+                            Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an,
+                            insolens gubergren similique est cu. Et vel modus congue vituperata.
+                        </p>
+                        <div class="section__block-line">
+                            <button class="button" type="button" id="price-btn">View pricing</button>
+                            <button class="button" type="button" id="readDoc-btn">Read documentation</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="newsletter">
+                <div class="container">
+                    <div class="section__body">
+                        <div class="section__block-column">
+                            <h2 class="section__title">
+                                Sign up for newsletter
+                            </h2>
+                            <p class="section__text">
+                                Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.
+                            </p>
+                        </div>
+                        <form class="section__form">
+                            <input class="section__form-input" type="email" placeholder="Email address">
+                            <button class="button" type="submit" id="form-save-btn">Save me</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <div class="footer__leftside">
+                        <div class="footer__column">
+                            <div class="footer__line">
+                                <div class="logo">
+                                    <a  class="logo__link" href="#header">
+                                        <img src="img/logo.svg" alt="company logo">
+                                    </a>
+                                </div>
+                                <nav class="menu">
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#header">Home</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#blog">Blog</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#features">Features</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#pricing">Pricing</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link" href="#documentation">Documentation</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="footer__copyright">
+                                <p class="section__text">
+                                    Copyright © 2018 by Random site
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__rightside">
+                        <div class="footer__line">
+                            <div class="social">
+                                <div class="social__item">
+                                    <a href="#" class="social__link">
+                                        <img src="img/icon-facebook.svg" alt="facebook icon">
+                                    </a>
+                                </div>
+                                <div class="social__item">
+                                    <a href="#" class="social__link">
+                                        <img src="img/icon-telegram.svg" alt="telegram icon">
+                                    </a>
+                                </div>
+                                <div class="social__item">
+                                    <a href="#" class="social__link">
+                                        <img src="img/icon-twitter.svg" alt="twitter icon">
+                                    </a>
+                                </div>
+                                <div class="social__item">
+                                    <a href="#" class="social__link">
+                                        <img src="img/icon-medium.svg" alt="medium icon">
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="button" type="button" id="footer-start-btn">Get started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
