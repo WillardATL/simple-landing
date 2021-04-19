@@ -1,0 +1,72 @@
+/*styles for buttons*/
+
+.button {
+    height: 43px;
+    border: none;
+    border-radius: 2px;
+    text-decoration: none; 
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    &-start {
+        width: 113px;
+        background-color: #d2e1ff;
+        color: #3A79FF;
+    }
+    &-video {
+        width: 130px;
+        background: #4C85FF;
+        box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+        justify-content: space-between;
+        color: #FFFFFF;
+    }
+    &-features {
+        width: 130px;
+        background: transparent;
+        border: 1px solid #D1D1E4;
+        color: #ADB4D2;
+        font-weight: 500;
+    }
+    &-readMore {
+        width: 113px;
+        background: #FFD7D7;          
+        color: #D43F3F;
+    }
+    &-readNow {
+        width: 113px;
+        background: #D2E1FF;          
+        color: #3A79FF;
+    }
+    &-goToDoc {
+        width: 195px;
+        background: #E8ECF4;          
+        color: #7382A3;
+        font-weight: 500;
+    }
+    &-price {
+        width: 130px;
+        background: #FFFFFF;          
+        color:  #565F82;
+    }
+    &-readDoc {
+        width: 155px;
+        background: transparent;
+        border: 1px solid #A0B4FF;          
+        color:  #C7D3FF;
+        font-weight: 500;
+    }
+    &-formSave {
+        width: 184px;
+        height: 59px;
+        background: #4D6CE1;
+        box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+        border-radius: 5px;          
+        color:  #ffff;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
