@@ -1190,6 +1190,88 @@ body {
   z-index: 1;
 }
 
+.accordion {
+  margin-left: 19%;
+  margin-right: 19%;
+}
+
+.accordion .card {
+  outline: 0;
+  outline-offset: 0;
+  border-bottom: 1px solid #D8E3FE;
+  margin-bottom: 17px;
+}
+
+.accordion .card__header {
+  height: 60px;
+  padding-left: 60px;
+  position: relative;
+  list-style: none;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.accordion .card__header::-webkit-details-marker {
+  display: none;
+}
+
+.accordion .card__body {
+  margin-left: 80px;
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.accordion .card__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #8D96BD;
+  max-width: 390px;
+  padding-right: 62px;
+  vertical-align: top;
+}
+
+.accordion .card__caption {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 45px;
+  letter-spacing: 0.03em;
+  color: #8E96B7;
+}
+
+.accordion .card__caption::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+  border-right: 3px solid #8E96B7;
+  border-top: 3px solid #8E96B7;
+  height: 12px;
+  width: 12px;
+}
+
+.accordion .card[open] .card__caption {
+  font-weight: 700;
+  color: #495274;
+}
+
+.accordion .card[open] .card__caption::before {
+  top: 20px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-color: #495274;
+}
+
 /*styles for elements*/
 .logo {
   -webkit-box-flex: 0;
