@@ -16,7 +16,7 @@
 /*styles for sections*/
 
 .header {
-    height: 80px;
+    //height: 80px;
     width: 100%;
     background-color: #ffff;
     border-bottom: 1px solid #d8e3fe;
@@ -25,6 +25,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        margin: 18px 0;
     }
     &__leftside,
     &__rightside  {
@@ -38,11 +39,12 @@
 
 .section-home  {
     width: 100%;
-    height: 570px;
+    min-height: 570px;
     background: url(/img/background-home.jpg);
     background-size: cover;
     .section__body {
         flex-direction: column;
+        height: 100%;
     }
     .section__title {
         font-size: 48px;
@@ -54,11 +56,12 @@
 
 .section-customers {
     width: 100%;
-    height: 145px;
+    //height: 145px;
     background-color: #ffff;
     .section__body {
         align-items: center;
         justify-content: center;
+        margin: 60px 0;
     }
     .section__logo {
         display: flex;
@@ -161,12 +164,13 @@
 
 .section-features {
     width: 100%;
-    height: 885px;
+    min-height: 885px;
     background: url(/img/background-clouds-blue.png);
     background-size: cover;
     background-color: #FFFFFF;
     .section__body {
         flex-direction: column;
+        margin-bottom: 170px;
     }
     .section__title {
         font-size: 24px;
@@ -251,17 +255,16 @@
 
 .section-statistics {
     width: 100%;
-    height: 342px;
+    min-height: 342px;
     .section__body {
-        align-items: flex-start;
+        width: 100%;
     }
     .section__block-column--blue {
         width: 50%;
         height: inherit;
         align-items: flex-end;
         text-align: right;
-        padding-top: 66px;
-        padding-right: 90px;
+        padding: 66px 90px 66px 0;
         background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
         color: #FFFFFF;
     }
@@ -269,8 +272,7 @@
         width: 50%;
         height: inherit;
         align-items: flex-start;
-        padding-top: 66px;
-        padding-left: 90px;
+        padding: 66px 0 66px 90px;
         background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
         color: #5E80FF;
     }
@@ -452,7 +454,7 @@
 }
 
 .footer {
-    height: 287px;
+    min-height: 287px;
     width: 100%;
     background-color: #ffff;
     &__body {
@@ -460,6 +462,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 90px;
     }
     &__leftside,
     &__rightside  {
@@ -559,7 +562,6 @@
 
 
 .slider {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -578,7 +580,7 @@
     &__card-2,
     &__card-3 {
         position: absolute;
-        top: 0;
+        top: 208px;
         left: 50%;
         transform: translate(-50%);
         opacity: 0;
@@ -666,11 +668,18 @@
         &::-webkit-details-marker {
             display: none
         }
+        &:hover {
+            cursor: pointer;
+        }
     }
     .card__body {
         margin-left: 80px;
         margin-bottom: 45px;
         display: flex;
+        .button-goToDoc {
+            position: relative;
+            top: 10px;
+        }
     }
     .card__text {
         font-family: Roboto;

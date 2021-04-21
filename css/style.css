@@ -111,13 +111,12 @@ body {
 
 .section {
   width: 100%;
-  height: 100%;
   border-bottom: 1px solid #d8e3fe;
+  position: relative;
 }
 
 .section__body {
   height: inherit;
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -159,8 +158,20 @@ body {
           justify-content: flex-start;
 }
 
-.visually-hidden {
-  display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
 }
 
 /*styles for buttons*/
@@ -276,7 +287,6 @@ body {
 
 /*styles for sections*/
 .header {
-  height: 80px;
   width: 100%;
   background-color: #ffff;
   border-bottom: 1px solid #d8e3fe;
@@ -293,6 +303,7 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 18px 0;
 }
 
 .header__leftside, .header__rightside {
@@ -312,7 +323,7 @@ body {
 
 .section-home {
   width: 100%;
-  height: 570px;
+  min-height: 570px;
   background: url(/img/background-home.jpg);
   -webkit-background-size: cover;
           background-size: cover;
@@ -324,6 +335,7 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 
 .section-home .section__title {
@@ -335,7 +347,6 @@ body {
 
 .section-customers {
   width: 100%;
-  height: 145px;
   background-color: #ffff;
 }
 
@@ -348,6 +359,7 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 60px 0;
 }
 
 .section-customers .section__logo {
@@ -479,7 +491,7 @@ body {
 
 .section-features {
   width: 100%;
-  height: 885px;
+  min-height: 885px;
   background: url(/img/background-clouds-blue.png);
   -webkit-background-size: cover;
           background-size: cover;
@@ -492,6 +504,7 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 170px;
 }
 
 .section-features .section__title {
@@ -592,14 +605,11 @@ body {
 
 .section-statistics {
   width: 100%;
-  height: 342px;
+  min-height: 342px;
 }
 
 .section-statistics .section__body {
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  width: 100%;
 }
 
 .section-statistics .section__block-column--blue {
@@ -610,8 +620,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   text-align: right;
-  padding-top: 66px;
-  padding-right: 90px;
+  padding: 66px 90px 66px 0;
   background: -webkit-linear-gradient(220.68deg, #6888FF 12.77%, #5E80FF 73.11%);
   background: -o-linear-gradient(220.68deg, #6888FF 12.77%, #5E80FF 73.11%);
   background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
@@ -625,8 +634,7 @@ body {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 66px;
-  padding-left: 90px;
+  padding: 66px 0 66px 90px;
   background: -webkit-linear-gradient(348.52deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
   background: -o-linear-gradient(348.52deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
   background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
@@ -891,7 +899,7 @@ body {
 }
 
 .footer {
-  height: 287px;
+  min-height: 287px;
   width: 100%;
   background-color: #ffff;
 }
@@ -907,6 +915,7 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 90px;
 }
 
 .footer__leftside, .footer__rightside {
@@ -1062,7 +1071,6 @@ body {
 }
 
 .slider {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1105,7 +1113,7 @@ body {
 
 .slider__card-1, .slider__card-2, .slider__card-3 {
   position: absolute;
-  top: 0;
+  top: 208px;
   left: 50%;
   -webkit-transform: translate(-50%);
       -ms-transform: translate(-50%);
@@ -1215,6 +1223,10 @@ body {
   display: none;
 }
 
+.accordion .card__header:hover {
+  cursor: pointer;
+}
+
 .accordion .card__body {
   margin-left: 80px;
   margin-bottom: 45px;
@@ -1222,6 +1234,11 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.accordion .card__body .button-goToDoc {
+  position: relative;
+  top: 10px;
 }
 
 .accordion .card__text {
