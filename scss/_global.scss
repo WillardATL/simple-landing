@@ -50,3 +50,23 @@ input[type="radio"].visually-hidden {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+
+.section__title {
+    font-weight: 300;
+    text-align: center;
+    &--small {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        padding-bottom: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+    }
+    &--bold {
+        font-weight: 700;
+    }
+}

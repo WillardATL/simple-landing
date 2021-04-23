@@ -1,0 +1,33 @@
+/* styles for section Get Started */ 
+.section-getStarted {
+    width: 100%;
+    min-height: 447px;
+    background: url(/img/background-get-started.jpg);
+    background-size: cover;
+    .section__body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section__title {
+        font-size: 48px;
+        line-height: 60px;
+        color: #ffff;
+        margin-top: 92px;
+        margin-bottom: 28px;
+        &--small {
+            padding-bottom: 16px;
+        }
+    }
+    .section__text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        max-width: 712px;
+        margin-bottom: 28px;
+    }    
+}

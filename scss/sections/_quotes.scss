@@ -1,0 +1,32 @@
+/* styles for section Quotes */ 
+.section-quotes {
+    width: 100%;
+    min-height: 479px;
+    background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+    .section__body {
+        justify-content: space-between;
+    }
+    .section__title {
+        font-size: 36px;
+        line-height: 45px;
+        font-weight: 500;
+        color: #3D4F9F;
+        margin-top: 146px;
+        margin-bottom: 14px;
+        text-align: left;
+        &--small {
+            padding-bottom: 31px;
+            justify-content: flex-start;
+        }
+    }
+    .section__text {
+        max-width: 323px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+        color: #A4ABC8;
+    }
+}

@@ -1,0 +1,28 @@
+/* styles for block Social */ 
+.social {
+    display: flex;
+    &__item {
+        display: flex;
+        justify-content: center;
+        margin-right: 35px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        display: flex;
+        &:hover,
+        &:active,
+        &:focus {
+            .social__link-img {
+                display: none;
+            }
+            .social__link-img--hover {
+                display: block;
+            }
+        }
+    }
+    &__link-img--hover {
+        display: none;
+    }
+}

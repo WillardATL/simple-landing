@@ -1,0 +1,17 @@
+/* styles for section Home */ 
+.section-home  {
+    width: 100%;
+    min-height: 570px;
+    background: url(/img/background-home.jpg);
+    background-size: cover;
+    .section__body {
+        flex-direction: column;
+        height: 100%;
+    }
+    .section__title {
+        font-size: 48px;
+        line-height: 60px;
+        color: #3D4F9F;
+        margin-top: 92px;
+    }
+}

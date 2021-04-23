@@ -1,0 +1,45 @@
+/* styles for section Footer */ 
+.footer {
+    min-height: 287px;
+    width: 100%;
+    background-color: #ffff;
+    &__body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 90px;
+    }
+    &__leftside,
+    &__rightside  {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 93px;
+    }
+    &__line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .button {
+            margin-left: 44px;
+        }
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    &__copyright {
+        margin-top: 28px;
+        margin-left: 98px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #AEB8D0;
+    }
+}

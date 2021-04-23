@@ -1,0 +1,20 @@
+/* styles for section Blog */ 
+.section-blog {
+    width: 100%;
+    min-height: 776px;
+    background: #F5F8FF;
+    .section__body {
+        flex-direction: column;
+    }
+    .section__title {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #3D4F9F;
+        margin-top: 104px;
+        margin-bottom: 92px;
+        &--small {
+            padding-bottom: 20px;
+        }
+    }
+}

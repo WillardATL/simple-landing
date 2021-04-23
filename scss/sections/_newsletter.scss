@@ -1,0 +1,52 @@
+/* styles for section Newsletter */ 
+.section-newsletter {
+    width: 100%;
+    min-height: 332px;
+    background: #FCFDFF;
+    .section__body {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .section__block-column {
+        padding-right: 80px;
+    }
+    .section__form {
+        margin-top: 136px;
+        display: flex;
+        &-input {
+            width: 279px;
+            height: 59px;
+            padding-left: 23px;
+            border: none;   
+            background: #EFEFF7;
+            border-radius: 5px;
+            &::placeholder {
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 16px;
+                color: #7A85AD;
+            }
+            margin-right: 14px;
+        }
+    }
+    .section__title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        color: #3D4F9F;
+        margin-top: 118px;
+        margin-bottom: 18px;
+        align-self: flex-start;
+    }
+    .section__text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+        color: #8D96BD;
+        max-width: 330px;
+
+    }
+}
