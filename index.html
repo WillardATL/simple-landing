@@ -18,7 +18,7 @@
                     <div class="header__leftside">
                         <div class="logo">
                             <a class="logo__link" href="#header">
-                                <img src="img/logo.svg" alt="company logo">
+                                <img src="img/svg/logo.svg" alt="company logo">
                             </a>
                         </div>
                         <nav class="menu">
@@ -45,29 +45,29 @@
                         <div class="social">
                             <div class="social__item">
                                 <a class="social__link" href="#">
-                                    <img class="social__link-img" src="img/icon-facebook.svg" alt="facebook icon">
-                                    <img class="social__link-img--hover" src="img/icon-facebook-hover.svg"
+                                    <img class="social__link-img" src="img/svg/icon-facebook.svg" alt="facebook icon">
+                                    <img class="social__link-img--hover" src="img/svg/icon-facebook-hover.svg"
                                         alt="facebook icon">
                                 </a>
                             </div>
                             <div class="social__item">
                                 <a class="social__link" href="#">
-                                    <img class="social__link-img" src="img/icon-telegram.svg" alt="telegram icon">
-                                    <img class="social__link-img--hover" src="img/icon-telegram-hover.svg"
+                                    <img class="social__link-img" src="img/svg/icon-telegram.svg" alt="telegram icon">
+                                    <img class="social__link-img--hover" src="img/svg/icon-telegram-hover.svg"
                                         alt="telegram icon">
                                 </a>
                             </div>
                             <div class="social__item">
                                 <a class="social__link" href="#">
-                                    <img class="social__link-img" src="img/icon-twitter.svg" alt="twitter icon">
-                                    <img class="social__link-img--hover" src="img/icon-twitter-hover.svg"
+                                    <img class="social__link-img" src="img/svg/icon-twitter.svg" alt="twitter icon">
+                                    <img class="social__link-img--hover" src="img/svg/icon-twitter-hover.svg"
                                         alt="twitter icon">
                                 </a>
                             </div>
                             <div class="social__item">
                                 <a class="social__link" href="#">
-                                    <img class="social__link-img" src="img/icon-medium.svg" alt="medium icon">
-                                    <img class="social__link-img--hover" src="img/icon-medium-hover.svg"
+                                    <img class="social__link-img" src="img/svg/icon-medium.svg" alt="medium icon">
+                                    <img class="social__link-img--hover" src="img/svg/icon-medium-hover.svg"
                                         alt="medium icon">
                                 </a>
                             </div>
@@ -92,7 +92,7 @@
                                     pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus
                                     congue vituperata.</p>
                                 <button class="slider__button" type="button">
-                                    <img class="slider__button-img" src="/img/icon-play-blue.svg" alt="play button">
+                                    <img class="slider__button-img" src="/img/svg/icon-play-blue.svg" alt="play button">
                                 </button>
                             </div>
                             <div class="slider__card slider__card-2">
@@ -119,29 +119,22 @@
                 <div class="container">
                     <h2 class="visually-hidden">Our customers is</h2>
                     <div class="section__body">
-                        <div class="section__logo">
-                            <img class="section__logo-img" src="/img/logo-bitbucket.svg" alt="bitbucket logo">
-                            <img class="section__logo-img--hover" src="/img/logo-bitbucket-hover.svg"
-                                alt="bitbucket logo">
+                        <div class="logo">
+                            <svg id="logo-bitbucket" class="logo-bitbucket">
+                                <use xlink:href="/img/svg/sprite.svg#logo-bitbucket"></use>
+                            </svg>
                         </div>
-                        <div class="section__logo">
-                            <img class="section__logo-img" src="/img/logo-apple-watch.svg" alt="apple-watch logo">
-                            <img class="section__logo-img--hover" src="/img/logo-apple-watch-hover.svg"
-                                alt="apple-watch logo">
+                        <div class="logo">
+                            <img class="logo__img" src="/img/svg/logo-apple-watch.svg" alt="apple-watch logo">
                         </div>
-                        <div class="section__logo">
-                            <img class="section__logo-img" src="/img/logo-facebook.svg" alt="facebook logo">
-                            <img class="section__logo-img--hover" src="/img/logo-facebook-hover.svg"
-                                alt="facebook logo">
+                        <div class="logo">
+                            <img class="logo__img" src="/img/svg/logo-facebook.svg" alt="facebook logo">
                         </div>
-                        <div class="section__logo">
-                            <img class="section__logo-img" src="/img/logo-atlassian.svg" alt="atlassian logo">
-                            <img class="section__logo-img--hover" src="/img/logo-atlassian-hover.svg"
-                                alt="atlassian logo">
+                        <div class="logo">
+                            <img class="logo__img" src="/img/svg/logo-atlassian.svg" alt="atlassian logo">
                         </div>
-                        <div class="section__logo">
-                            <img class="section__logo-img" src="/img/logo-audi.svg" alt="audi logo">
-                            <img class="section__logo-img--hover" src="/img/logo-audi-hover.svg" alt="audi logo">
+                        <div class="logo">
+                            <img class="logo__img" src="/img/svg/logo-audi.svg" alt="audi logo">
                         </div>
                     </div>
                 </div>
@@ -163,7 +156,7 @@
                                 <div class="section__block-line">
                                     <button class="button button-video" type="button" id="video-btn">
                                         View video
-                                        <img src="/img/icon-play-white.svg" alt="play button">
+                                        <img src="/img/svg/icon-play-white.svg" alt="play button">
                                     </button>
                                     <button class="button button-features" id="features-btn">See features
                                     </button>
@@ -173,10 +166,18 @@
                     </div>
                     <div class="section__rightside">
                         <div class="section__rightside-body">
-                            <img class="section__img-02" src="/img/illustration-desktop.png" alt="desctop version">
-                            <img class="section__img-01" src="/img/illustration-mobile-one.png" alt="mobile version">
-                            <img class="section__img-03" src="/img/illustration-mobile-two.png" alt="mobile version">
-
+                            <picture class="section__img-02">
+                                <source srcset="/img/illustration-desktop.png 1x, /img/illustration-desktop@2x.png 2x" type="image/png">
+                                <img src="/img/illustration-desktop.png 1x, /img/illustration-desktop@2x.png 2x" alt="desctop version">
+                            </picture>
+                            <picture class="section__img-01">
+                                <source srcset="/img/illustration-mobile-one.png 1x, /img/illustration-mobile-one@2x.png 2x" type="image/png">
+                                <img src="/img/illustration-mobile-one.png 1x, /img/illustration-mobile-one@2x.png 2x" alt="mobile version">
+                            </picture>
+                            <picture class="section__img-03">
+                                <source srcset="/img/illustration-mobile-two.png 1x, /img/illustration-mobile-two@2x.png 2x" type="image/png">
+                                <img src="/img/illustration-mobile-two.png 1x, /img/illustration-mobile-two@2x.png 2x" alt="mobile version">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -190,7 +191,7 @@
                         <div class="section__block-line">
                             <div class="section__block-column">
                                 <div class="section__icon">
-                                    <img class="section__icon-img" src="/img/icon-home.svg" alt="overview icon"
+                                    <img class="section__icon-img" src="/img/svg/icon-home.svg" alt="overview icon"
                                         width="14" height="17">
                                 </div>
                                 <h5 class="section__caption">Overview</h5>
@@ -200,7 +201,7 @@
                             </div>
                             <div class="section__block-column">
                                 <div class="section__icon">
-                                    <img class="section__icon-img" src="/img/icon-files.svg" alt="files icon" width="23"
+                                    <img class="section__icon-img" src="/img/svg/icon-files.svg" alt="files icon" width="23"
                                         height="14">
                                 </div>
                                 <h5 class="section__caption">Files</h5>
@@ -210,7 +211,7 @@
                             </div>
                             <div class="section__block-column">
                                 <div class="section__icon">
-                                    <img class="section__icon-img" src="/img/icon-chat.svg" alt="chat icon" width="18"
+                                    <img class="section__icon-img" src="/img/svg/icon-chat.svg" alt="chat icon" width="18"
                                         height="15">
                                 </div>
                                 <h5 class="section__caption">Meeting chats</h5>
@@ -220,7 +221,7 @@
                             </div>
                             <div class="section__block-column">
                                 <div class="section__icon">
-                                    <img class="section__icon-img" src="/img/icon-save.svg" alt="save icon" width="17"
+                                    <img class="section__icon-img" src="/img/svg/icon-save.svg" alt="save icon" width="17"
                                         height="15">
                                 </div>
                                 <h5 class="section__caption">Save events</h5>
@@ -242,14 +243,14 @@
                 <div class="section__body">
                     <h2 class="visually-hidden">Our statistics</h2>
                     <div class="section__block-column section__block-column--blue">
-                        <img class="section__icon" src="/img/icon-increase.svg" alt="increase icon">
+                        <img class="section__icon" src="/img/svg/icon-increase.svg" alt="increase icon">
                         <p class="section__title">89%</p>
                         <p class="section__text">
                             Customers who have increased their productivity
                         </p>
                     </div>
                     <div class="section__block-column section__block-column--white">
-                        <img class="section__icon" src="/img/icon-peoples.svg" alt="customers icon">
+                        <img class="section__icon" src="/img/svg/icon-peoples.svg" alt="customers icon">
                         <p class="section__title">3123</p>
                         <p class="section__text">
                             Users who have used our application
@@ -385,7 +386,7 @@
                             <div class="footer__line">
                                 <div class="logo">
                                     <a class="logo__link" href="#header">
-                                        <img src="img/logo.svg" alt="company logo">
+                                        <img src="img/svg/logo.svg" alt="company logo">
                                     </a>
                                 </div>
                                 <nav class="menu">
@@ -420,29 +421,29 @@
                             <div class="social">
                                 <div class="social__item">
                                     <a class="social__link" href="#">
-                                        <img class="social__link-img" src="img/icon-facebook.svg" alt="facebook icon">
-                                        <img class="social__link-img--hover" src="img/icon-facebook-hover.svg"
+                                        <img class="social__link-img" src="img/svg/icon-facebook.svg" alt="facebook icon">
+                                        <img class="social__link-img--hover" src="img/svg/icon-facebook-hover.svg"
                                             alt="facebook icon">
                                     </a>
                                 </div>
                                 <div class="social__item">
                                     <a class="social__link" href="#">
-                                        <img class="social__link-img" src="img/icon-telegram.svg" alt="telegram icon">
-                                        <img class="social__link-img--hover" src="img/icon-telegram-hover.svg"
+                                        <img class="social__link-img" src="img/svg/icon-telegram.svg" alt="telegram icon">
+                                        <img class="social__link-img--hover" src="img/svg/icon-telegram-hover.svg"
                                             alt="telegram icon">
                                     </a>
                                 </div>
                                 <div class="social__item">
                                     <a class="social__link" href="#">
-                                        <img class="social__link-img" src="img/icon-twitter.svg" alt="twitter icon">
-                                        <img class="social__link-img--hover" src="img/icon-twitter-hover.svg"
+                                        <img class="social__link-img" src="img/svg/icon-twitter.svg" alt="twitter icon">
+                                        <img class="social__link-img--hover" src="img/svg/icon-twitter-hover.svg"
                                             alt="twitter icon">
                                     </a>
                                 </div>
                                 <div class="social__item">
                                     <a class="social__link" href="#">
-                                        <img class="social__link-img" src="img/icon-medium.svg" alt="medium icon">
-                                        <img class="social__link-img--hover" src="img/icon-medium-hover.svg"
+                                        <img class="social__link-img" src="img/svg/icon-medium.svg" alt="medium icon">
+                                        <img class="social__link-img--hover" src="img/svg/icon-medium-hover.svg"
                                             alt="medium icon">
                                     </a>
                                 </div>

@@ -2,7 +2,9 @@
 .section-home  {
     width: 100%;
     min-height: 570px;
-    background: url(/img/background-home.jpg);
+    background-image: url(/img/background-home.jpg);
+    background-color: f4f7ff;
+    background-position: 50% 100%;
     background-size: cover;
     .section__body {
         flex-direction: column;

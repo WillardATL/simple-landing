@@ -2,8 +2,10 @@
 .section-getStarted {
     width: 100%;
     min-height: 447px;
-    background: url(/img/background-get-started.jpg);
+    background-image: url(/img/background-get-started.jpg);
     background-size: cover;
+    background-position: 50% 100%;
+    background-color: #6686ff;
     .section__body {
         flex-direction: column;
         align-items: center;

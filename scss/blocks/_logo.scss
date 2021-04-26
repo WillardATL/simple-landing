@@ -1,8 +1,8 @@
 /* styles for block Logo */ 
 .logo {
-    flex: 0 0 26px;
-    margin-right: 52px;
-        img {
+    flex: 0 0 auto;
+        img,
+        svg {
         display: block;
         max-width: 100%;
         }

@@ -336,11 +336,20 @@ input[type="radio"].visually-hidden {
   margin-left: 44px;
 }
 
+.header .logo {
+  -webkit-flex-basis: 26px;
+      -ms-flex-preferred-size: 26px;
+          flex-basis: 26px;
+  margin-right: 52px;
+}
+
 /* styles for section Home */
 .section-home {
   width: 100%;
   min-height: 570px;
-  background: url(/img/background-home.jpg);
+  background-image: url(/img/background-home.jpg);
+  background-color: f4f7ff;
+  background-position: 50% 100%;
   -webkit-background-size: cover;
           background-size: cover;
 }
@@ -376,30 +385,25 @@ input[type="radio"].visually-hidden {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 60px 0;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 30px 0;
 }
 
-.section-customers .section__logo {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 38px;
-  width: 116px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+.section-customers .logo {
+  -webkit-flex-basis: 116px;
+      -ms-flex-preferred-size: 116px;
+          flex-basis: 116px;
+  margin: 30px 38px;
 }
 
-.section-customers .section__logo:hover .section__logo-img, .section-customers .section__logo:active .section__logo-img, .section-customers .section__logo:focus .section__logo-img {
-  display: none;
+.section-customers .logo svg {
+  fill: #D6DAE5;
 }
 
-.section-customers .section__logo:hover .section__logo-img--hover, .section-customers .section__logo:active .section__logo-img--hover, .section-customers .section__logo:focus .section__logo-img--hover {
-  display: block;
-}
-
-.section-customers .section__logo-img--hover {
-  display: none;
+.section-customers .logo svg:hover, .section-customers .logo svg:active, .section-customers .logo svg:focus {
+  fill: #5283FF;
 }
 
 /* styles for section Plan And Manage */
@@ -442,7 +446,7 @@ input[type="radio"].visually-hidden {
   max-width: 606px;
 }
 
-.section-planAndManage .section__rightside-body img {
+.section-planAndManage .section__rightside-body picture {
   -webkit-filter: drop-shadow 0px 20px 40px rgba(53, 60, 115, 0.15);
           filter: drop-shadow 0px 20px 40px rgba(53, 60, 115, 0.15);
 }
@@ -511,7 +515,7 @@ input[type="radio"].visually-hidden {
 .section-features {
   width: 100%;
   min-height: 885px;
-  background: url(/img/background-clouds-blue.png);
+  background-image: url(/img/background-clouds-blue.png);
   -webkit-background-size: cover;
           background-size: cover;
   background-color: #FFFFFF;
@@ -784,13 +788,20 @@ input[type="radio"].visually-hidden {
   padding-bottom: 20px;
 }
 
+.section-faq .accordion {
+  margin-left: 19%;
+  margin-right: 19%;
+}
+
 /* styles for section Get Started */
 .section-getStarted {
   width: 100%;
   min-height: 447px;
-  background: url(/img/background-get-started.jpg);
+  background-image: url(/img/background-get-started.jpg);
   -webkit-background-size: cover;
           background-size: cover;
+  background-position: 50% 100%;
+  background-color: #6686ff;
 }
 
 .section-getStarted .section__body {
@@ -956,6 +967,13 @@ input[type="radio"].visually-hidden {
   margin-top: 93px;
 }
 
+.footer .logo {
+  -webkit-flex-basis: 26px;
+      -ms-flex-preferred-size: 26px;
+          flex-basis: 26px;
+  margin-right: 52px;
+}
+
 .footer__line {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1098,19 +1116,14 @@ input[type="radio"].visually-hidden {
 }
 
 /* styles for block Accordion */
-.accordion {
-  margin-left: 19%;
-  margin-right: 19%;
-}
-
-.accordion .card {
+.card {
   outline: 0;
   outline-offset: 0;
   border-bottom: 1px solid #D8E3FE;
   margin-bottom: 17px;
 }
 
-.accordion .card__header {
+.card__header {
   height: 60px;
   padding-left: 60px;
   position: relative;
@@ -1119,15 +1132,15 @@ input[type="radio"].visually-hidden {
   outline-offset: 0;
 }
 
-.accordion .card__header::-webkit-details-marker {
+.card__header::-webkit-details-marker {
   display: none;
 }
 
-.accordion .card__header:hover {
+.card__header:hover {
   cursor: pointer;
 }
 
-.accordion .card__body {
+.card__body {
   margin-left: 80px;
   margin-bottom: 45px;
   display: -webkit-box;
@@ -1136,12 +1149,12 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-.accordion .card__body .button-goToDoc {
+.card__body .button-goToDoc {
   position: relative;
   top: 10px;
 }
 
-.accordion .card__text {
+.card__text {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -1154,7 +1167,7 @@ input[type="radio"].visually-hidden {
   vertical-align: top;
 }
 
-.accordion .card__caption {
+.card__caption {
   font-weight: 500;
   font-size: 15px;
   line-height: 45px;
@@ -1162,7 +1175,7 @@ input[type="radio"].visually-hidden {
   color: #8E96B7;
 }
 
-.accordion .card__caption::before {
+.card__caption::before {
   content: "";
   position: absolute;
   top: 12px;
@@ -1176,12 +1189,12 @@ input[type="radio"].visually-hidden {
   width: 12px;
 }
 
-.accordion .card[open] .card__caption {
+.card[open] .card__caption {
   font-weight: 700;
   color: #495274;
 }
 
-.accordion .card[open] .card__caption::before {
+.card[open] .card__caption::before {
   top: 20px;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
@@ -1192,13 +1205,13 @@ input[type="radio"].visually-hidden {
 /* styles for block Logo */
 .logo {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 26px;
-      -ms-flex: 0 0 26px;
-          flex: 0 0 26px;
-  margin-right: 52px;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
-.logo img {
+.logo img,
+.logo svg {
   display: block;
   max-width: 100%;
 }
