@@ -11,18 +11,33 @@
     }
     &__link {
         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link-img {
+        height: 100%;
+        fill: #B6BAC7;
         &:hover,
         &:active,
         &:focus {
-            .social__link-img {
-                display: none;
-            }
-            .social__link-img--hover {
-                display: block;
-            }
+            fill: #5283FF
         }
     }
-    &__link-img--hover {
-        display: none;
+    .icon-telegram {
+        &>path:nth-child(1) {
+            fill: #9399AB;
+        }
+        &>path:nth-child(2) {
+            fill: #70788E;
+        }
+        &>path:nth-child(3) {
+            fill: #B6BAC7;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+            fill: #5283FF
+        }
     }
+    
 }

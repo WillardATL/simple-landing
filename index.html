@@ -18,7 +18,9 @@
                     <div class="header__leftside">
                         <div class="logo">
                             <a class="logo__link" href="#header">
-                                <img src="img/svg/logo.svg" alt="company logo">
+                                <svg class="logo" id="header-logo" height="26" width="26">
+                                    <use xlink:href="/img/svg/sprite.svg#logo"></use>
+                                </svg>
                             </a>
                         </div>
                         <nav class="menu">
@@ -45,30 +47,30 @@
                         <div class="social">
                             <div class="social__item">
                                 <a class="social__link" href="#">
-                                    <img class="social__link-img" src="img/svg/icon-facebook.svg" alt="facebook icon">
-                                    <img class="social__link-img--hover" src="img/svg/icon-facebook-hover.svg"
-                                        alt="facebook icon">
+                                    <svg class="social__link-img icon-facebook" id="header__icon-facebook"  height="17" width="17">
+                                            <use xlink:href="/img/svg/sprite.svg#icon-facebook"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="social__item">
                                 <a class="social__link" href="#">
-                                    <img class="social__link-img" src="img/svg/icon-telegram.svg" alt="telegram icon">
-                                    <img class="social__link-img--hover" src="img/svg/icon-telegram-hover.svg"
-                                        alt="telegram icon">
+                                    <svg class="social__link-img icon-telegram" id="header-icon-telegram"  height="17" width="17">
+                                        <use xlink:href="/img/svg/sprite.svg#icon-telegram"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="social__item">
                                 <a class="social__link" href="#">
-                                    <img class="social__link-img" src="img/svg/icon-twitter.svg" alt="twitter icon">
-                                    <img class="social__link-img--hover" src="img/svg/icon-twitter-hover.svg"
-                                        alt="twitter icon">
+                                    <svg class="social__link-img icon-twitter" id="header-icon-twitter"  height="17" width="17">
+                                        <use xlink:href="/img/svg/sprite.svg#icon-twitter"></use>
+                                    </svg>
                                 </a>
                             </div>
                             <div class="social__item">
                                 <a class="social__link" href="#">
-                                    <img class="social__link-img" src="img/svg/icon-medium.svg" alt="medium icon">
-                                    <img class="social__link-img--hover" src="img/svg/icon-medium-hover.svg"
-                                        alt="medium icon">
+                                    <svg class="social__link-img icon-medium" id="header-icon-medium"  height="17" width="17">
+                                        <use xlink:href="/img/svg/sprite.svg#icon-medium"></use>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -92,7 +94,9 @@
                                     pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus
                                     congue vituperata.</p>
                                 <button class="slider__button" type="button">
-                                    <img class="slider__button-img" src="/img/svg/icon-play-blue.svg" alt="play button">
+                                    <svg class="slider__button-img" id="icon-play-blue.svg" width="12" height="11">
+                                        <use xlink:href="/img/svg/sprite.svg#icon-play-blue"></use>
+                                    </svg>
                                 </button>
                             </div>
                             <div class="slider__card slider__card-2">
@@ -120,21 +124,29 @@
                     <h2 class="visually-hidden">Our customers is</h2>
                     <div class="section__body">
                         <div class="logo">
-                            <svg id="logo-bitbucket" class="logo-bitbucket">
+                            <svg class="logo-bitbucket" id="logo-bitbucket"  height="29" width="116">
                                 <use xlink:href="/img/svg/sprite.svg#logo-bitbucket"></use>
                             </svg>
                         </div>
                         <div class="logo">
-                            <img class="logo__img" src="/img/svg/logo-apple-watch.svg" alt="apple-watch logo">
+                            <svg class="logo-apple-watch" id="logo-apple-watch" height="29" width="116">
+                                <use xlink:href="/img/svg/sprite.svg#logo-apple-watch"></use>
+                            </svg>
                         </div>
                         <div class="logo">
-                            <img class="logo__img" src="/img/svg/logo-facebook.svg" alt="facebook logo">
+                            <svg class="logo-facebook" id="logo-facebook" height="29" width="116">
+                                <use xlink:href="/img/svg/sprite.svg#logo-facebook"></use>
+                            </svg>
                         </div>
                         <div class="logo">
-                            <img class="logo__img" src="/img/svg/logo-atlassian.svg" alt="atlassian logo">
+                            <svg class="logo-atlassian" id="logo-atlassian" height="29" width="116">
+                                <use xlink:href="/img/svg/sprite.svg#logo-atlassian"></use>
+                            </svg>
                         </div>
                         <div class="logo">
-                            <img class="logo__img" src="/img/svg/logo-audi.svg" alt="audi logo">
+                            <svg class="logo-audi" id="logo-audi" height="29" width="116">
+                                <use xlink:href="/img/svg/sprite.svg#logo-audi"></use>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -156,7 +168,9 @@
                                 <div class="section__block-line">
                                     <button class="button button-video" type="button" id="video-btn">
                                         View video
-                                        <img src="/img/svg/icon-play-white.svg" alt="play button">
+                                        <svg class="button-video-img" id="icon-play-white.svg" width="10" height="8">
+                                                <use xlink:href="/img/svg/sprite.svg#icon-play-white"></use>
+                                        </svg>
                                     </button>
                                     <button class="button button-features" id="features-btn">See features
                                     </button>
@@ -168,15 +182,15 @@
                         <div class="section__rightside-body">
                             <picture class="section__img-02">
                                 <source srcset="/img/illustration-desktop.png 1x, /img/illustration-desktop@2x.png 2x" type="image/png">
-                                <img src="/img/illustration-desktop.png 1x, /img/illustration-desktop@2x.png 2x" alt="desctop version">
+                                <img src="/img/illustration-desktop.png" srcset="/img/illustration-desktop@2x.png 2x" alt="desctop version">
                             </picture>
                             <picture class="section__img-01">
                                 <source srcset="/img/illustration-mobile-one.png 1x, /img/illustration-mobile-one@2x.png 2x" type="image/png">
-                                <img src="/img/illustration-mobile-one.png 1x, /img/illustration-mobile-one@2x.png 2x" alt="mobile version">
+                                <img src="/img/illustration-mobile-one.png" srcset="/img/illustration-mobile-one@2x.png 2x" alt="mobile version">
                             </picture>
                             <picture class="section__img-03">
                                 <source srcset="/img/illustration-mobile-two.png 1x, /img/illustration-mobile-two@2x.png 2x" type="image/png">
-                                <img src="/img/illustration-mobile-two.png 1x, /img/illustration-mobile-two@2x.png 2x" alt="mobile version">
+                                <img src="/img/illustration-mobile-two.png" srcset="/img/illustration-mobile-two@2x.png 2x" alt="mobile version">
                             </picture>
                         </div>
                     </div>
@@ -191,8 +205,9 @@
                         <div class="section__block-line">
                             <div class="section__block-column">
                                 <div class="section__icon">
-                                    <img class="section__icon-img" src="/img/svg/icon-home.svg" alt="overview icon"
-                                        width="14" height="17">
+                                    <svg class="section__icon-img" id="icon-home" width="14" height="17">
+                                        <use xlink:href="/img/svg/sprite.svg#icon-home"></use>
+                                    </svg>
                                 </div>
                                 <h5 class="section__caption">Overview</h5>
                                 <p class="section__text--small">
@@ -201,8 +216,9 @@
                             </div>
                             <div class="section__block-column">
                                 <div class="section__icon">
-                                    <img class="section__icon-img" src="/img/svg/icon-files.svg" alt="files icon" width="23"
-                                        height="14">
+                                    <svg class="section__icon-img" id="icon-files" width="23" height="14">
+                                        <use xlink:href="/img/svg/sprite.svg#icon-files"></use>
+                                    </svg>
                                 </div>
                                 <h5 class="section__caption">Files</h5>
                                 <p class="section__text--small">
@@ -211,8 +227,9 @@
                             </div>
                             <div class="section__block-column">
                                 <div class="section__icon">
-                                    <img class="section__icon-img" src="/img/svg/icon-chat.svg" alt="chat icon" width="18"
-                                        height="15">
+                                    <svg class="section__icon-img" id="icon-chat" width="18" height="15">
+                                        <use xlink:href="/img/svg/sprite.svg#icon-chat"></use>
+                                    </svg>
                                 </div>
                                 <h5 class="section__caption">Meeting chats</h5>
                                 <p class="section__text--small">
@@ -221,8 +238,9 @@
                             </div>
                             <div class="section__block-column">
                                 <div class="section__icon">
-                                    <img class="section__icon-img" src="/img/svg/icon-save.svg" alt="save icon" width="17"
-                                        height="15">
+                                    <svg class="section__icon-img" id="icon-save.svg" width="17" height="15">
+                                        <use xlink:href="/img/svg/sprite.svg#icon-save"></use>
+                                    </svg>
                                 </div>
                                 <h5 class="section__caption">Save events</h5>
                                 <p class="section__text--small">
@@ -243,14 +261,18 @@
                 <div class="section__body">
                     <h2 class="visually-hidden">Our statistics</h2>
                     <div class="section__block-column section__block-column--blue">
-                        <img class="section__icon" src="/img/svg/icon-increase.svg" alt="increase icon">
+                        <svg class="section__icon" id="icon-increase" width="70" height="70">
+                            <use xlink:href="/img/svg/sprite.svg#icon-increase"></use>
+                        </svg>
                         <p class="section__title">89%</p>
                         <p class="section__text">
                             Customers who have increased their productivity
                         </p>
                     </div>
                     <div class="section__block-column section__block-column--white">
-                        <img class="section__icon" src="/img/svg/icon-peoples.svg" alt="customers icon">
+                        <svg class="section__icon" id="icon-peoples" width="70" height="70">
+                            <use xlink:href="/img/svg/sprite.svg#icon-peoples"></use>
+                        </svg>
                         <p class="section__title">3123</p>
                         <p class="section__text">
                             Users who have used our application
@@ -386,7 +408,9 @@
                             <div class="footer__line">
                                 <div class="logo">
                                     <a class="logo__link" href="#header">
-                                        <img src="img/svg/logo.svg" alt="company logo">
+                                        <svg class="logo" id="footer-logo" height="26" width="26">
+                                            <use xlink:href="/img/svg/sprite.svg#logo"></use>
+                                        </svg>
                                     </a>
                                 </div>
                                 <nav class="menu">
@@ -421,30 +445,30 @@
                             <div class="social">
                                 <div class="social__item">
                                     <a class="social__link" href="#">
-                                        <img class="social__link-img" src="img/svg/icon-facebook.svg" alt="facebook icon">
-                                        <img class="social__link-img--hover" src="img/svg/icon-facebook-hover.svg"
-                                            alt="facebook icon">
+                                        <svg class="social__link-img icon-facebook" id="footer-icon-facebook"  height="17" width="17">
+                                                <use xlink:href="/img/svg/sprite.svg#icon-facebook"></use>
+                                        </svg>
                                     </a>
                                 </div>
                                 <div class="social__item">
                                     <a class="social__link" href="#">
-                                        <img class="social__link-img" src="img/svg/icon-telegram.svg" alt="telegram icon">
-                                        <img class="social__link-img--hover" src="img/svg/icon-telegram-hover.svg"
-                                            alt="telegram icon">
+                                        <svg class="social__link-img icon-telegram" id="footer-icon-telegram" height="17" width="17">
+                                            <use xlink:href="/img/svg/sprite.svg#icon-telegram"></use>
+                                        </svg>
                                     </a>
                                 </div>
                                 <div class="social__item">
                                     <a class="social__link" href="#">
-                                        <img class="social__link-img" src="img/svg/icon-twitter.svg" alt="twitter icon">
-                                        <img class="social__link-img--hover" src="img/svg/icon-twitter-hover.svg"
-                                            alt="twitter icon">
+                                        <svg class="social__link-img icon-twitter" id="footer-icon-twitter"  height="17" width="17">
+                                            <use xlink:href="/img/svg/sprite.svg#icon-twitter"></use>
+                                        </svg>
                                     </a>
                                 </div>
                                 <div class="social__item">
                                     <a class="social__link" href="#">
-                                        <img class="social__link-img" src="img/svg/icon-medium.svg" alt="medium icon">
-                                        <img class="social__link-img--hover" src="img/svg/icon-medium-hover.svg"
-                                            alt="medium icon">
+                                        <svg class="social__link-img icon-medium" id="footer-icon-medium"  height="17" width="17">
+                                            <use xlink:href="/img/svg/sprite.svg#icon-medium"></use>
+                                        </svg>
                                     </a>
                                 </div>
                             </div>

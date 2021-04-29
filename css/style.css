@@ -1101,18 +1101,39 @@ input[type="radio"].visually-hidden {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.social__link:hover .social__link-img, .social__link:active .social__link-img, .social__link:focus .social__link-img {
-  display: none;
+.social__link-img {
+  height: 100%;
+  fill: #B6BAC7;
 }
 
-.social__link:hover .social__link-img--hover, .social__link:active .social__link-img--hover, .social__link:focus .social__link-img--hover {
-  display: block;
+.social__link-img:hover, .social__link-img:active, .social__link-img:focus {
+  fill: #5283FF;
 }
 
-.social__link-img--hover {
-  display: none;
+.social .icon-telegram > path:nth-child(1) {
+  fill: #9399AB;
+}
+
+.social .icon-telegram > path:nth-child(2) {
+  fill: #70788E;
+}
+
+.social .icon-telegram > path:nth-child(3) {
+  fill: #B6BAC7;
+}
+
+.social .icon-telegram:hover, .social .icon-telegram:active, .social .icon-telegram:focus {
+  fill: #5283FF;
 }
 
 /* styles for block Accordion */
