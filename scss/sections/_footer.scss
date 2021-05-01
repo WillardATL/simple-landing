@@ -2,27 +2,34 @@
 .footer {
     min-height: 287px;
     width: 100%;
-    background-color: #ffff;
+    background-color: $color-main-02;
     &__body {
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 90px;
+        
     }
     &__leftside,
     &__rightside  {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         margin-top: 93px;
+        .button {
+            margin-left: 44px;
+        }
     }
     .logo {
         flex-basis: 26px;
-        margin-right: 52px;
+        margin-right: 38px;
     }
+    
+    
+    
+    
     &__line {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         .button {
             margin-left: 44px;
@@ -34,8 +41,7 @@
         justify-content: flex-start;
     }
     &__copyright {
-        margin-top: 28px;
-        margin-left: 98px;
+        margin: 28px 0px 90px 98px;
         font-weight: 500;
         font-size: 12px;
         line-height: 15px;
@@ -44,6 +50,7 @@
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: capitalize;
-        color: #AEB8D0;
+        color: $color-text-light;
+        
     }
 }

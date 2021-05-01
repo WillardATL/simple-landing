@@ -2,7 +2,7 @@
 .section-newsletter {
     width: 100%;
     min-height: 332px;
-    background: #FCFDFF;
+    background: $color-background-02;
     .section__body {
         flex-direction: row;
         justify-content: center;
@@ -18,13 +18,13 @@
             height: 59px;
             padding-left: 23px;
             border: none;   
-            background: #EFEFF7;
+            background: $color-grey-light;
             border-radius: 5px;
             &::placeholder {
                 font-weight: 700;
                 font-size: 13px;
                 line-height: 16px;
-                color: #7A85AD;
+                color: $color-text;
             }
             margin-right: 14px;
         }
@@ -33,7 +33,7 @@
         font-size: 18px;
         font-weight: 700;
         line-height: 22px;
-        color: #3D4F9F;
+        color: $color-titles;
         margin-top: 118px;
         margin-bottom: 18px;
         align-self: flex-start;
@@ -45,7 +45,7 @@
         font-size: 14px;
         line-height: 27px;
         letter-spacing: 0.03em;
-        color: #8D96BD;
+        color: $color-text;
         max-width: 330px;
 
     }

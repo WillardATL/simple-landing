@@ -2,8 +2,8 @@
 .header {
     //height: 80px;
     width: 100%;
-    background-color: #ffff;
-    border-bottom: 1px solid #d8e3fe;
+    background-color: $color-main-02;
+    border-bottom: 1px solid $color-border;
     &__body {
         height: 100%;
         width: 100%;
@@ -21,7 +21,7 @@
     }
     .logo {
         flex-basis: 26px;
-        margin-right: 52px;
+        margin-right: 38px;
     }
 }
 

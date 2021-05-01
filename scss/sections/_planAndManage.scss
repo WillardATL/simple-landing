@@ -2,7 +2,7 @@
 .section-planAndManage {
     width: 100%;
     min-height: 776px;
-    background: #F5F8FF;
+    background: $color-background-02;
     .section__leftside {
         width: 50%;
         &-body {
@@ -52,7 +52,7 @@
         font-size: 36px;
         line-height: 45px;
         text-align: left;
-        color: #3D4F9F;
+        color: $color-titles;
         &--small {
             padding-bottom: 27px;
             justify-content: flex-start;
@@ -68,7 +68,7 @@
         font-size: 15px;
         line-height: 29px;
         letter-spacing: 0.03em;
-        color: #8D96BD;
+        color: $color-text;
         margin: 27px 0 47px 0;
     }
     .button-video {

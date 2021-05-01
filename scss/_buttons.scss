@@ -11,60 +11,56 @@
     display: flex;
     align-items: center;
     justify-content: center; 
-    &-start {
-        width: 113px;
-        background-color: #d2e1ff;
-        color: #3A79FF;
+    &-start,
+    &-readNow {
+        min-width: 113px;
+        background-color: $color-btn-01;
+        color: $color-main-01;
     }
     &-video {
-        width: 130px;
-        background: #4C85FF;
+        min-width: 130px;
+        background: $color-main-01;
         box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
         justify-content: space-between;
-        color: #FFFFFF;
+        color: $color-main-02;
     }
     &-features {
-        width: 130px;
+        min-width: 130px;
         background: transparent;
         border: 1px solid #D1D1E4;
         color: #ADB4D2;
         font-weight: 500;
     }
     &-readMore {
-        width: 113px;
-        background: #FFD7D7;          
-        color: #D43F3F;
-    }
-    &-readNow {
-        width: 113px;
-        background: #D2E1FF;          
-        color: #3A79FF;
+        min-width: 113px;
+        background: $color-btn-02;          
+        color: $color-text-red;
     }
     &-goToDoc {
-        width: 195px;
-        background: #E8ECF4;          
-        color: #7382A3;
+        min-width: 195px;
+        background: $color-grey;          
+        color: $color-text;
         font-weight: 500;
     }
     &-price {
-        width: 130px;
-        background: #FFFFFF;          
-        color:  #565F82;
+        min-width: 130px;
+        background: $color-main-02;        
+        color:  $color-text-dark;
     }
     &-readDoc {
-        width: 155px;
+        min-width: 155px;
         background: transparent;
-        border: 1px solid #A0B4FF;          
-        color:  #C7D3FF;
+        border: 1px solid $color-border;          
+        color:  $color-text;
         font-weight: 500;
     }
     &-formSave {
-        width: 184px;
+        min-width: 184px;
         height: 59px;
-        background: #4D6CE1;
+        background: $color-main-01;
         box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
         border-radius: 5px;          
-        color:  #ffff;
+        color:  $color-main-02;
     }
     &:hover {
         cursor: pointer;

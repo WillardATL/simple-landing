@@ -3,7 +3,7 @@
     width: 100%;
     min-height: 570px;
     background-image: url(/img/background-home.jpg);
-    background-color: f4f7ff;
+    background-color: $color-background-02;
     background-position: 50% 100%;
     background-size: cover;
     .section__body {
@@ -13,7 +13,7 @@
     .section__title {
         font-size: 48px;
         line-height: 60px;
-        color: #3D4F9F;
+        color: $color-titles;
         margin-top: 92px;
     }
 }

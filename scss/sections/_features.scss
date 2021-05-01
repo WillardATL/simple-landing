@@ -4,7 +4,7 @@
     min-height: 885px;
     background-image: url(/img/background-clouds-blue.png);
     background-size: cover;
-    background-color: #FFFFFF;
+    background-color: $color-main-02;
     .section__body {
         flex-direction: column;
         margin-bottom: 170px;
@@ -13,7 +13,7 @@
         font-size: 24px;
         line-height: 30px;
         font-weight: 500;
-        color: #3D4F9F;
+        color: $color-titles;
         margin-top: 171px;
         margin-bottom: 92px;
         &--small {
@@ -28,7 +28,7 @@
         height: 69px;
         border: 0;
         border-radius: 50%;
-        background-color: #F1F5FF;
+        background-color: $color-background-02;
         margin-bottom: 33px;
     }
     .section__block-column {
@@ -41,7 +41,7 @@
         font-weight: bold;
         font-size: 14px;
         line-height: 25px;
-        color: #4074F8;
+        color: $color-main-01;
         margin-bottom: 25px;
     }
     .section__text--small {
@@ -51,7 +51,7 @@
         font-size: 11px;
         line-height: 19px;
         text-align: center;
-        color: #ADB3CB;
+        color: $color-text-light;
         min-height: 102px;
         max-width: 140px;
     }
@@ -63,13 +63,13 @@
             font-weight: 600;
             font-size: 11px;
             line-height: 20px;
-            color: #ADB3CB;
+            color: $color-text-light;
             text-transform: uppercase;
             position: relative;
             &::before {
                 content: "";
                 position: absolute;
-                background-color: #DAE4FE;
+                background-color: $color-border;
                 border: none;
                 height: 1px;
                 top: 10px;
@@ -79,7 +79,7 @@
             &::after {
                 content: "";
                 position: absolute;
-                background-color: #DAE4FE;
+                background-color: $color-border;
                 border: none;
                 height: 1px;
                 top: 10px;

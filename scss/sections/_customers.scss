@@ -1,7 +1,7 @@
 /* styles for section Customers */
 .section-customers {
     width: 100%;
-    background-color: #ffff;
+    background-color: $color-main-02;
     .section__body {
         align-items: center;
         justify-content: center;
@@ -12,11 +12,11 @@
         flex-basis: 116px;
         margin: 30px 38px;
         svg {
-            fill: #D6DAE5;
+            fill: $color-grey;
             &:hover,
             &:active,
             &:focus {
-                fill: #5283FF
+                fill: $color-main-01;
             }
         }
     }

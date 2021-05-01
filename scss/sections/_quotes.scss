@@ -2,7 +2,7 @@
 .section-quotes {
     width: 100%;
     min-height: 479px;
-    background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+    background: $color-gradient-02;
     .section__body {
         justify-content: space-between;
     }
@@ -10,7 +10,7 @@
         font-size: 36px;
         line-height: 45px;
         font-weight: 500;
-        color: #3D4F9F;
+        color:$color-titles;
         margin-top: 146px;
         margin-bottom: 14px;
         text-align: left;
@@ -27,6 +27,6 @@
         font-size: 12px;
         line-height: 23px;
         letter-spacing: 0.03em;
-        color: #A4ABC8;
+        color: $color-text-light;
     }
 }

@@ -14,7 +14,7 @@ body {
 
 .section {
     width: 100%;
-    border-bottom: 1px solid #d8e3fe;
+    border-bottom: 1px solid $color-border;
     position: relative;
     &__body {
         height: inherit;
