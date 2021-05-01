@@ -260,7 +260,7 @@ input[type="radio"].visually-hidden {
 
 .button-goToDoc {
   min-width: 195px;
-  background: #D6DAE5;
+  background: #B6BAC7;
   color: #8D96BD;
   font-weight: 500;
 }
@@ -393,7 +393,7 @@ input[type="radio"].visually-hidden {
 }
 
 .section-customers .logo svg {
-  fill: #D6DAE5;
+  fill: #B6BAC7;
 }
 
 .section-customers .logo svg:hover, .section-customers .logo svg:active, .section-customers .logo svg:focus {
@@ -1108,27 +1108,23 @@ input[type="radio"].visually-hidden {
 
 .social__link-img {
   height: 100%;
-  fill: #D6DAE5;
+  fill: #B6BAC7;
 }
 
 .social__link-img:hover, .social__link-img:active, .social__link-img:focus {
   fill: #5E80FF;
 }
 
-.social .icon-telegram > path:nth-child(1) {
-  fill: #9399AB;
+.social .icon-telegram:hover .telegram-color-01, .social .icon-telegram:active .telegram-color-01, .social .icon-telegram:focus .telegram-color-01 {
+  fill: #1e4eff;
 }
 
-.social .icon-telegram > path:nth-child(2) {
-  fill: #70788E;
+.social .icon-telegram:hover .telegram-color-02, .social .icon-telegram:active .telegram-color-02, .social .icon-telegram:focus .telegram-color-02 {
+  fill: #002fde;
 }
 
-.social .icon-telegram > path:nth-child(3) {
-  fill: #B6BAC7;
-}
-
-.social .icon-telegram:hover, .social .icon-telegram:active, .social .icon-telegram:focus {
-  fill: #5283FF;
+.social .icon-telegram:hover .telegram-color-03, .social .icon-telegram:active .telegram-color-03, .social .icon-telegram:focus .telegram-color-03 {
+  fill: #5E80FF;
 }
 
 /* styles for block Accordion */
@@ -1335,7 +1331,7 @@ input[type="radio"].visually-hidden {
 .slider__control-buttons label {
   height: 8px;
   width: 8px;
-  background-color: #D6DAE5;
+  background-color: #B6BAC7;
   cursor: pointer;
   -webkit-border-radius: 50%;
           border-radius: 50%;

@@ -24,20 +24,19 @@
         }
     }
     .icon-telegram {
-        &>path:nth-child(1) {
-            fill: #9399AB;
-        }
-        &>path:nth-child(2) {
-            fill: #70788E;
-        }
-        &>path:nth-child(3) {
-            fill: #B6BAC7;
-        }
         &:hover,
         &:active,
         &:focus {
-            fill: #5283FF
+            .telegram-color-01 {
+                fill: darken($color-main-01, 12.5);
+            }
+            .telegram-color-02 {
+                fill: darken($color-main-01, 25);
+            }
+            .telegram-color-03 {
+                fill: $color-main-01;
+            }
         }
+        
     }
-    
 }
