@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center; 
+    transition: font-size, 0.2s;
     &-start,
     &-readNow {
         min-width: 113px;
@@ -21,8 +22,13 @@
         min-width: 130px;
         background: $color-main-01;
         box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         color: $color-main-02;
+        &-img {
+            margin-top: 3px;
+            margin-left: 6px;
+        }
     }
     &-features {
         min-width: 130px;
@@ -36,9 +42,14 @@
         background: $color-btn-02;          
         color: $color-text-red;
     }
+    &-addBookmarks {
+        min-width: 195px;
+        background: $color-main-02;          
+        color: $color-text;
+    }
     &-goToDoc {
         min-width: 195px;
-        background: $color-grey;          
+        background: $color-grey-light;          
         color: $color-text;
         font-weight: 500;
     }
@@ -48,10 +59,10 @@
         color:  $color-text-dark;
     }
     &-readDoc {
-        min-width: 155px;
+        min-width: 165px;
         background: transparent;
         border: 1px solid $color-border;          
-        color:  $color-text;
+        color:  $color-border;
         font-weight: 500;
     }
     &-formSave {
@@ -62,7 +73,11 @@
         border-radius: 5px;          
         color:  $color-main-02;
     }
-    &:hover {
+    &:hover,
+    &:focus {
         cursor: pointer;
+        font-size: 15px;
+        border: 2px solid;
+
     }
 }

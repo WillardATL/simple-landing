@@ -1,17 +1,16 @@
 /* styles for section Quotes */ 
 .section-quotes {
     width: 100%;
-    min-height: 479px;
     background: $color-gradient-02;
     .section__body {
         justify-content: space-between;
+        padding: 110px 0;
     }
     .section__title {
         font-size: 36px;
         line-height: 45px;
         font-weight: 500;
         color:$color-titles;
-        margin-top: 146px;
         margin-bottom: 14px;
         text-align: left;
         &--small {

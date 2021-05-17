@@ -1,9 +1,10 @@
 /* styles for block Slider at the section Home */
-.slider {
+.home-slider {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+    
     input {
         display: none;
     }    
@@ -73,15 +74,15 @@
         }
     }
     
-    #card-1:checked ~ .slider__control-buttons label:nth-of-type(1),
-    #card-2:checked ~ .slider__control-buttons label:nth-of-type(2),
-    #card-3:checked ~ .slider__control-buttons label:nth-of-type(3) {
+    #card-1:checked ~ .home-slider__control-buttons label:nth-of-type(1),
+    #card-2:checked ~ .home-slider__control-buttons label:nth-of-type(2),
+    #card-3:checked ~ .home-slider__control-buttons label:nth-of-type(3) {
 	    background-color: $color-main-01;
     }
 
-    #card-1:checked ~ .slider__card-1,
-    #card-2:checked ~ .slider__card-2,
-    #card-3:checked ~ .slider__card-3 {
+    #card-1:checked ~ .home-slider__card-1,
+    #card-2:checked ~ .home-slider__card-2,
+    #card-3:checked ~ .home-slider__card-3 {
 	    opacity: 1;
 	    z-index: 1;
     }

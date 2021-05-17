@@ -18,14 +18,9 @@
 @import "./blocks/social";
 @import "./blocks/accordion";
 @import "./blocks/logo";
-@import "./blocks/slider";
+@import "./blocks/home-slider";
 
 
 * {
     //border: 0.001px solid red;
-    box-sizing: border-box;
-    margin-block-start:0;
-    margin-block-end:0;
-    margin-inline-start:0;
-    margin-inline-end:0;
 }

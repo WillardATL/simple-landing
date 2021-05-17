@@ -1,20 +1,34 @@
 /* styles for section Blog */ 
 .section-blog {
     width: 100%;
-    min-height: 776px;
     background: $color-background-02;
     .section__body {
         flex-direction: column;
+        padding: 105px 0;
     }
     .section__title {
         font-size: 24px;
         line-height: 30px;
         font-weight: 500;
         color: $color-titles;
-        margin-top: 104px;
         margin-bottom: 92px;
         &--small {
             padding-bottom: 20px;
         }
     }
+    .swiper-wrapper {
+        //display: flex;
+        //align-items: center;
+        //justify-self: center;
+    }
+    .swiper-slide {
+        max-width: 958px; 
+        max-height: 394px;
+        display: flex;
+        &__leftside,
+        &__rightside {
+            width: 50%;
+        }
+    }
+  
 }

@@ -10,7 +10,7 @@
         height: inherit;
         align-items: flex-end;
         text-align: right;
-        padding: 66px 90px 66px 0;
+        padding: 66px 90px 66px 10px;
         background: $color-gradient-01;
         color: $color-main-02;
     }
@@ -18,7 +18,7 @@
         width: 50%;
         height: inherit;
         align-items: flex-start;
-        padding: 66px 0 66px 90px;
+        padding: 66px 10px 66px 90px;
         background: $color-gradient-02;
         color: $color-main-01;
     }

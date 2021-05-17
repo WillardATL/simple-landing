@@ -1,47 +1,37 @@
 /* styles for section Plan And Manage */ 
 .section-planAndManage {
     width: 100%;
-    min-height: 776px;
     background: $color-background-02;
+    .section__body {
+        padding: 200px 10px;
+    }
     .section__leftside {
         width: 50%;
-        &-body {
-            max-width: 413px;
-        }
+        display: flex;
+        justify-content: flex-end;
         .container {
             max-width: 610px;
-            margin-right: 0;
-            padding-right: 40px;
-            padding-top: 208px;
+            margin: 0;
+            padding: 0 30px 0 150px;
             display: flex;
-            justify-content: flex-end;
+            flex-direction: column;
+
         }
     }
     .section__rightside {
-        width: 50%;       
-        &-body {
-            margin: 170px 45px 50px 65px;
-            position: relative;
-            max-width: 606px;
-            picture {
-                filter: drop-shadow (0px 20px 40px rgba(53, 60, 115, 0.15));
-            }
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;   
+        picture {
+            filter: drop-shadow (0px 20px 40px rgba(53, 60, 115, 0.15));
         }
     }
-    .section__img-01 {
-        width: 17.6%;
-        position: absolute;
-        top: 28.6%;
-        left: -7.8%;
-    }
-    .section__img-02 {
+    .section__img {
         width: 100%;
-    }
-    .section__img-03 {
-        width: 24.4%;
-        position: absolute;
-        top: 44.7%;
-        right: 10.2%;
+        img {
+            width: 100%;
+        }
     }
 
     .section__block-line {
@@ -71,7 +61,33 @@
         color: $color-text;
         margin: 27px 0 47px 0;
     }
-    .button-video {
-        padding: 0 16px 0 24px;
+}
+
+@media (max-width:767px) {
+    .section-planAndManage {
+        .section__body {
+            flex-direction: column;
+            padding: 100px 10px;
+        }
+        .section__leftside,
+        .section__rightside {
+            width: 100%;
+            justify-content: center;
+        }
+        .section__leftside {
+            margin-bottom: 100px;
+            .container {
+            padding: 0;
+            margin: 0;
+            align-content: center;
+            }
+        }
+        
+        .section__title {
+            text-align: center;
+            &--small {
+                justify-content: center;
+            }
+        }
     }
 }

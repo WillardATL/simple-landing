@@ -1,18 +1,18 @@
 /* styles for section Newsletter */ 
 .section-newsletter {
     width: 100%;
-    min-height: 332px;
     background: $color-background-02;
     .section__body {
         flex-direction: row;
         justify-content: center;
+        padding: 130px 0;
     }
     .section__block-column {
         padding-right: 80px;
     }
     .section__form {
-        margin-top: 136px;
         display: flex;
+        align-items: center;
         &-input {
             width: 279px;
             height: 59px;
@@ -34,7 +34,6 @@
         font-weight: 700;
         line-height: 22px;
         color: $color-titles;
-        margin-top: 118px;
         margin-bottom: 18px;
         align-self: flex-start;
     }
@@ -48,5 +47,20 @@
         color: $color-text;
         max-width: 330px;
 
+    }
+}
+
+@media (max-width:1023px) {
+    .section-newsletter .section__body {
+        flex-direction: column;
+        align-items: center;
+        .section__block-column {
+            padding-right: 0px;
+            padding-bottom: 80px;
+            text-align: center;
+            .section__title {
+                align-self: center;
+            }
+        }
     }
 }

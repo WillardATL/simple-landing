@@ -4,6 +4,9 @@
     outline-offset: 0;
     border-bottom: 1px solid $color-border;
     margin-bottom: 17px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
 }
 .card__header {
     height: 60px;
@@ -14,9 +17,6 @@
     outline-offset: 0;
     &::-webkit-details-marker {
         display: none
-    }
-    &:hover {
-        cursor: pointer;
     }
 }
 .card__body {
@@ -41,15 +41,17 @@
     vertical-align: top;
 }
 .card__caption {
+    height: 100%;
     font-weight: 500;
     font-size: 15px;
-    line-height: 45px;
     letter-spacing: 0.03em;
     color: $color-titles;
+    display: flex;
+    align-items: center;
     &::before {
         content: "";
         position: absolute;
-        top: 12px;
+        top: 18px;
         left: 24px;
         transform: rotate(135deg);
         border-right: 3px solid $color-text;
@@ -62,8 +64,21 @@
     font-weight: 700;
     color: $color-titles;
     &::before {
-        top: 20px;
+        top: 25px;
         transform: rotate(-45deg);
         border-color: $color-titles;
     }
-}    
+}
+
+.card__header:hover {
+    cursor: pointer;
+    .card__caption {
+        font-weight: 700;
+        color: $color-titles;
+        &::before {
+            border-right: 3px solid $color-titles;
+            border-top: 3px solid $color-titles;
+        }
+    }
+}
+

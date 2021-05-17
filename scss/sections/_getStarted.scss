@@ -1,7 +1,6 @@
 /* styles for section Get Started */ 
 .section-getStarted {
     width: 100%;
-    min-height: 447px;
     background-image: url(/img/background-get-started.jpg);
     background-size: cover;
     background-position: 50% 100%;
@@ -9,12 +8,12 @@
     .section__body {
         flex-direction: column;
         align-items: center;
+        padding: 90px 0;
     }
     .section__title {
         font-size: 48px;
         line-height: 60px;
         color: $color-main-02;
-        margin-top: 92px;
         margin-bottom: 28px;
         &--small {
             padding-bottom: 16px;

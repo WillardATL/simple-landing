@@ -1,6 +1,5 @@
 /* styles for header */
 .header {
-    //height: 80px;
     width: 100%;
     background-color: $color-main-02;
     border-bottom: 1px solid $color-border;
@@ -9,7 +8,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin: 18px 0;
+        padding: 18px 0;
     }
     &__leftside,
     &__rightside  {
@@ -25,3 +24,20 @@
     }
 }
 
+@media (min-width: 768px) and (max-width:1023px) {
+    .logo {
+        margin-right: 20px;
+    }
+    .button {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__leftside .menu {
+        display: none;
+    }
+    .header__rightside .social {
+        display: none;
+    }
+}

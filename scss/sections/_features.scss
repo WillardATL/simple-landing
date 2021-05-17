@@ -1,20 +1,23 @@
 /* styles for section Feauteres */ 
 .section-features {
     width: 100%;
-    min-height: 885px;
-    background-image: url(/img/background-clouds-blue.png);
     background-size: cover;
     background-color: $color-main-02;
+    .container {
+        background-image: url(/img/background-clouds-blue.png);
+        background-color: $color-main-02;
+        background-size: cover;
+        background-position: center;
+    }
     .section__body {
         flex-direction: column;
-        margin-bottom: 170px;
+        padding: 150px 0;
     }
     .section__title {
         font-size: 24px;
         line-height: 30px;
         font-weight: 500;
         color: $color-titles;
-        margin-top: 171px;
         margin-bottom: 92px;
         &--small {
             padding-bottom: 16px;
@@ -36,7 +39,7 @@
         margin-bottom: 92px;
     }
     .section__caption {
-        font-family: Open Sans;
+        font-family: 'Open Sans', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -45,7 +48,7 @@
         margin-bottom: 25px;
     }
     .section__text--small {
-        font-family: Open Sans;
+        font-family: 'Open Sans', sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 11px;

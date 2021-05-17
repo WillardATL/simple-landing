@@ -1,5 +1,13 @@
 /*global styles*/
 
+* {
+    box-sizing: border-box;
+    margin-block-start:0;
+    margin-block-end:0;
+    margin-inline-start:0;
+    margin-inline-end:0;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
 }
@@ -55,7 +63,7 @@ input[type="radio"].visually-hidden {
     font-weight: 300;
     text-align: center;
     &--small {
-        font-family: Roboto;
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 10px;

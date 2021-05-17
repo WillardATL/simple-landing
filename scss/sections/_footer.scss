@@ -1,8 +1,10 @@
 /* styles for section Footer */ 
 .footer {
-    min-height: 287px;
     width: 100%;
     background-color: $color-main-02;
+    .container {
+        padding: 100px 10px;
+    }
     &__body {
         height: 100%;
         width: 100%;
@@ -14,7 +16,6 @@
     &__rightside  {
         display: flex;
         align-items: center;
-        margin-top: 93px;
         .button {
             margin-left: 44px;
         }
@@ -41,7 +42,7 @@
         justify-content: flex-start;
     }
     &__copyright {
-        margin: 28px 0px 90px 98px;
+        margin: 28px 0px 0px 88px;
         font-weight: 500;
         font-size: 12px;
         line-height: 15px;
@@ -52,5 +53,24 @@
         text-transform: capitalize;
         color: $color-text-light;
         
+    }
+}
+
+@media (max-width:1023px) {
+    .logo {
+        margin-right: 20px;
+    }
+    .button {
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .footer__leftside .menu {
+        display: none;
+    }
+    .footer__rightside .social {
+        display: none;
     }
 }
