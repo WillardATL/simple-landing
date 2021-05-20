@@ -21,7 +21,7 @@
     &-video {
         min-width: 130px;
         background: $color-main-01;
-        box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+        box-shadow: 0px 5px 15px $color-shadow-01;
         justify-content: center;
         align-items: center;
         color: $color-main-02;
@@ -69,14 +69,14 @@
         min-width: 184px;
         height: 59px;
         background: $color-main-01;
-        box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+        box-shadow: 0px 5px 15px $color-shadow-02;
         border-radius: 5px;          
         color:  $color-main-02;
     }
     &:hover,
     &:focus {
         cursor: pointer;
-        font-size: 15px;
+        //font-size: 15px;
         border: 2px solid;
 
     }

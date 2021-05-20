@@ -24,7 +24,7 @@
         justify-content: flex-start;
         align-items: center;   
         picture {
-            filter: drop-shadow (0px 20px 40px rgba(53, 60, 115, 0.15));
+            filter: drop-shadow (0px 20px 40px $color-shadow-05);
         }
     }
     .section__img {
@@ -52,7 +52,7 @@
         }
     }
     .section__text {
-        font-family: Roboto;
+        font-family: 'Roboto', 'Arial', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;

@@ -41,3 +41,14 @@
         max-width: 260px;
     }
 }
+
+@media (max-width: 767px) {
+    .section-statistics {
+        .section__block-column--blue {
+            padding-right: 40px;
+        }
+        .section__block-column--white {
+            padding-left: 40px;
+        }
+    }
+}

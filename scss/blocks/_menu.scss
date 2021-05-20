@@ -19,7 +19,7 @@
         letter-spacing: 0.05em;
         text-transform: capitalize;
         color: $color-text-dark;
-        text-shadow: 0px 0px 5px #E6E6E6;
+        text-shadow: 0px 0px 5px $color-shadow-04;
         &:hover,
         &:active,
         &:focus {
