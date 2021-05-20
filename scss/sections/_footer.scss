@@ -24,10 +24,6 @@
         flex-basis: 26px;
         margin-right: 38px;
     }
-    
-    
-    
-    
     &__line {
         display: flex;
         justify-content: flex-start;
@@ -70,10 +66,16 @@
 
 
 @media (max-width: 767px) {
-    .footer__leftside .menu {
+
+    .footer__rightside,
+    .footer__leftside {
         display: none;
     }
-    .footer__rightside .social {
-        display: none;
+    .footer__copyright {
+        margin: 0;
+        justify-content: center;
+    }
+    .footer .container {
+        padding: 20px 0;
     }
 }
