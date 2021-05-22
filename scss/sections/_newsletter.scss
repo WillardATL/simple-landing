@@ -13,6 +13,8 @@
     .section__form {
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         &-input {
             width: 279px;
             height: 59px;
@@ -56,11 +58,17 @@
         align-items: center;
         .section__block-column {
             padding-right: 0px;
-            padding-bottom: 80px;
+            margin-bottom: 80px;
             text-align: center;
             .section__title {
                 align-self: center;
             }
         }
+    }
+}
+
+@media (max-width: 496px) {
+    .button-formSave {
+        margin-top: 20px;
     }
 }

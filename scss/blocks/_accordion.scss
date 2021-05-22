@@ -73,8 +73,9 @@
 .card__header:hover {
     cursor: pointer;
     .card__caption {
-        font-weight: 700;
+        //font-weight: 700;
         color: $color-titles;
+        text-shadow: -0.06ex 0 $color-titles, 0.06ex 0 $color-titles;
         &::before {
             border-right: 3px solid $color-titles;
             border-top: 3px solid $color-titles;

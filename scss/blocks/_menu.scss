@@ -15,7 +15,7 @@
         text-decoration: none;
         font-size: 12px;
         line-height: 15px;
-        font-weight: 700;
+        font-weight: 500;
         letter-spacing: 0.05em;
         text-transform: capitalize;
         color: $color-text-dark;
@@ -24,6 +24,7 @@
         &:active,
         &:focus {
             color: $color-main-01;
+            text-shadow: -0.06ex 0 $color-main-01, 0.06ex 0 $color-main-01;
 
         }
     }

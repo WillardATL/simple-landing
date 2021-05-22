@@ -660,7 +660,7 @@ input[type="radio"].visually-hidden {
 }
 
 .section-features .section__block-column {
-  margin: 0 33px;
+  padding: 0 33px;
   margin-bottom: 92px;
 }
 
@@ -684,6 +684,16 @@ input[type="radio"].visually-hidden {
   color: #ADB3CB;
   min-height: 102px;
   max-width: 140px;
+}
+
+.section-features .section__block-line:nth-child(2) {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .section-features .section__block-line .section__separator {
@@ -718,6 +728,16 @@ input[type="radio"].visually-hidden {
   top: 10px;
   left: 33px;
   width: 15px;
+}
+
+@media (max-width: 369px) {
+  .section-features .section__block-line .section__separator {
+    margin: auto 10px;
+  }
+  .section__separator::before,
+  .section__separator::after {
+    display: none;
+  }
 }
 
 /* styles for section Statistics */
@@ -990,6 +1010,13 @@ input[type="radio"].visually-hidden {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .section-newsletter .section__form-input {
@@ -1067,7 +1094,7 @@ input[type="radio"].visually-hidden {
   }
   .section-newsletter .section__body .section__block-column {
     padding-right: 0px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
     text-align: center;
   }
   .section-newsletter .section__body .section__block-column .section__title {
@@ -1075,6 +1102,12 @@ input[type="radio"].visually-hidden {
         -ms-flex-item-align: center;
                 -ms-grid-row-align: center;
             align-self: center;
+  }
+}
+
+@media (max-width: 496px) {
+  .button-formSave {
+    margin-top: 20px;
   }
 }
 
@@ -1238,7 +1271,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   font-size: 12px;
   line-height: 15px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: capitalize;
   color: #495274;
@@ -1247,6 +1280,7 @@ input[type="radio"].visually-hidden {
 
 .menu__link:hover, .menu__link:active, .menu__link:focus {
   color: #5E80FF;
+  text-shadow: -0.06ex 0 #5E80FF, 0.06ex 0 #5E80FF;
 }
 
 .burger-menu {
@@ -1467,8 +1501,8 @@ input[type="radio"].visually-hidden {
 }
 
 .card__header:hover .card__caption {
-  font-weight: 700;
   color: #3D4F9F;
+  text-shadow: -0.06ex 0 #3D4F9F, 0.06ex 0 #3D4F9F;
 }
 
 .card__header:hover .card__caption::before {
