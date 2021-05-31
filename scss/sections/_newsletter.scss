@@ -67,8 +67,18 @@
     }
 }
 
+@media (max-width:767px) {
+    .section-newsletter .section__body {
+        padding: 70px 0 20px;
+    }
+}
+
 @media (max-width: 496px) {
     .button-formSave {
         margin-top: 20px;
+        width: 279px;
+    }
+    .section-newsletter .section__form-input {
+        margin-right: 0;
     }
 }

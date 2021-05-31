@@ -3,15 +3,17 @@
     width: 100%;
     background-color: $color-main-02;
     .section__body {
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: block;
         padding: 30px 0;
+    }
+    .customers-slider {
+        margin: 0 auto;
     }
     .logo {
         flex-basis: 116px;
         margin: 30px 38px;
         svg {
+            margin: 0 auto;
             fill: $color-grey;
             &:hover,
             &:active,

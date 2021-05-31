@@ -67,9 +67,20 @@
 
 @media (max-width: 767px) {
 
-    .footer__rightside,
+    .footer__body {
+        justify-content: center;
+    }
+
     .footer__leftside {
         display: none;
+    }
+    .footer__rightside {
+        .social {
+            margin-bottom: 30px;
+        }
+        .button {
+            display: none;
+        }
     }
     .footer__copyright {
         margin: 0;
@@ -77,5 +88,6 @@
     }
     .footer .container {
         padding: 20px 0;
+        //display: flex;
     }
 }

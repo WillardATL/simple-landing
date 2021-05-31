@@ -4,7 +4,7 @@
     background: $color-gradient-02;
     .section__body {
         justify-content: space-between;
-        padding: 110px 0;
+        padding: 100px 0;
     }
     .section__title {
         font-size: 36px;
@@ -27,5 +27,10 @@
         line-height: 23px;
         letter-spacing: 0.03em;
         color: $color-text-light;
+    }
+}
+@media (max-width:767px) {
+    .section-quotes .section__body {
+        padding: 70px 0 20px;
     }
 }

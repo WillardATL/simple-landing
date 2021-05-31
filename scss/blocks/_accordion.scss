@@ -20,7 +20,7 @@
     }
 }
 .card__body {
-    margin-left: 80px;
+    margin-left: 60px;
     margin-bottom: 45px;
     display: flex;
     .button-goToDoc {
@@ -83,3 +83,12 @@
     }
 }
 
+@media (max-width:767px) {
+    .accordion .card__body {
+        flex-direction: column;
+        .card__text {
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+}

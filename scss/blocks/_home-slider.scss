@@ -13,6 +13,8 @@
         display: flex;
         flex-direction: column;
         transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+        width: 500px;
+        padding: 0 10px;
     }
 
     &__card-1,
@@ -24,8 +26,8 @@
         transform: translate(-50%);
         opacity: 0;
         z-index: 0;
+
     p {
-        max-width: 502px;
         margin: 28px auto 20px;
         font-family: 'Roboto', 'Arial', sans-serif;
         font-style: normal;
@@ -85,5 +87,11 @@
     #card-3:checked ~ .home-slider__card-3 {
 	    opacity: 1;
 	    z-index: 1;
+    }
+}
+
+@media (max-width:767px) {
+    .home-slider__card {
+        width: 100%;
     }
 }

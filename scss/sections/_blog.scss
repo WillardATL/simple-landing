@@ -4,7 +4,7 @@
     background: $color-background-02;
     .section__body {
         flex-direction: column;
-        padding: 105px 0;
+        padding: 100px 0;
     }
     .section__title {
         font-size: 24px;
@@ -31,4 +31,10 @@
         }
     }
   
+}
+
+@media (max-width:767px) {
+    .section-blog .section__body {
+        padding: 70px 0 20px;
+    }
 }

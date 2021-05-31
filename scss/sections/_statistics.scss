@@ -52,3 +52,23 @@
         }
     }
 }
+
+@media (max-width: 415px) {
+    .section-statistics {
+        .section__body {
+            flex-direction: column;
+        }
+        .section__block-column--blue {
+            width: 100%;
+            padding: 50px 10px 30px;
+            align-items: center;
+            text-align: center;
+        }
+        .section__block-column--white {
+            width: 100%;
+            padding: 30px 10px 50px;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
