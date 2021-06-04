@@ -15,26 +15,11 @@
         &--small {
             padding-bottom: 20px;
         }
-    }
-    .swiper-wrapper {
-        //display: flex;
-        //align-items: center;
-        //justify-self: center;
-    }
-    .swiper-slide {
-        max-width: 958px; 
-        max-height: 394px;
-        display: flex;
-        &__leftside,
-        &__rightside {
-            width: 50%;
-        }
-    }
-  
+    } 
 }
 
 @media (max-width:767px) {
     .section-blog .section__body {
-        padding: 70px 0 20px;
+        padding: 70px 0 40px;
     }
 }

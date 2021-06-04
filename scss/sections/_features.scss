@@ -106,7 +106,7 @@
 
 @media (max-width: 768px) {
     .section-features .section__body {
-        padding: 70px 0 20px;
+        padding: 70px 0 40px;
     }
     .section-features .section__caption {
         font-size: 16px;
@@ -118,7 +118,7 @@
     }
 }
 
-@media (max-width:431px) {
+@media (max-width:631px) {
     .section-features .section__block-line .wrap .section__block-column {
         margin-bottom: 60px;
     }
@@ -130,6 +130,7 @@
     }
     .section-features .section__text--small {
         min-height: 0;
+        max-width: 300px;
     }
 
 }
